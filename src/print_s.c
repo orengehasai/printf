@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_s.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takenakatakeshiichirouta <takenakatakes    +#+  +:+       +#+        */
+/*   By: stonegaw <stonegaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 23:25:48 by takenakatak       #+#    #+#             */
-/*   Updated: 2025/05/05 18:24:40 by takenakatak      ###   ########.fr       */
+/*   Updated: 2025/05/05 18:56:51 by stonegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 int	print_s(char *str)
 {
-	int	res;
-	char *nul;
+	int		res;
+	char	*nul;
 
-	nul = "(nil)";
+	nul = "(null)";
 	if (!str)
 		return (write(1, nul, ft_strlen(nul)));
 	res = ft_strlen(str);

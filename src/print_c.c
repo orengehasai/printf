@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_c.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takenakatakeshiichirouta <takenakatakes    +#+  +:+       +#+        */
+/*   By: stonegaw <stonegaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 23:25:23 by takenakatak       #+#    #+#             */
-/*   Updated: 2025/05/05 11:26:38 by takenakatak      ###   ########.fr       */
+/*   Updated: 2025/05/05 19:37:30 by stonegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	print_c(char c)
 {
+	if (!c)
+		return (write(1, "\0",1));
 	return (write(1, &c, 1));
 }
